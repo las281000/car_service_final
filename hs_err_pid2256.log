@@ -1,0 +1,41 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x0000000000000000, pid=2256, tid=3104
+#
+# JRE version: Java(TM) SE Runtime Environment (18.0.2+9) (build 18.0.2+9-61)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (18.0.2+9-61, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, parallel gc, windows-amd64)
+# Problematic frame:
+# C  0x0000000000000000
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: --add-modules=ALL-SYSTEM --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/sun.nio.fs=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -Dfile.encoding=utf8 -DwatchParentProcess=false -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:c:\Users\Alexandra\.vscode\extensions\redhat.java-1.9.0-win32-x64\lombok\lombok-1.18.24.jar -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=c:\Users\Alexandra\AppData\Roaming\Code\User\workspaceStorage\8a1f80414099d19afdf991ae15999dd0\redhat.java c:\Users\Alexandra\.vscode\extensions\redhat.java-1.9.0-win32-x64\server\plugins\org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar -configuration c:\Users\Alexandra\AppData\Roaming\Code\User\globalStorage\redhat.java\1.9.0\config_win -data c:\Users\Alexandra\AppData\Roaming\Code\User\workspaceStorage\8a1f80414099d19afdf991ae15999dd0\redhat.java\jdt_ws
+
+Host: AMD Athlon(tm) II X3 445 Processor, 3 cores, 3G,  Windows 11 , 64 bit Build 22000 (10.0.22000.37)
+Time: Wed Aug 17 18:56:17 2022 RTZ 2 (s 11 , 64 bit Build 22000 (10.0.22000.37) elapsed time: 23796.032216 seconds (0d 6h 36m 36s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002156ae84320):  WorkerThread "GC Thread#0" [stack: 0x00000071c0400000,0x00000071c0500000] [id=3104]
+
+Stack: [0x00000071c0400000,0x00000071c0500000],  sp=0x00000071c04ff4d8,  free space=1021k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), data execution prevention violation at address 0x0000000000000000
+
+
+Register to memory mapping:
+
+RIP=0x0 is NULL
+RAX=0x0000000000000411 is an unknown value
+RBX=0x0000021576796810 points into unknown readable memory: 0x000002156ad30150 | 50 01 d3 6a 15 02 00 00
+RCX=0x00000071c04ff530 points into unknown readable memory: 0x00007ffb477bb488 | 88 b4 7b 47 fb 7f 00 00
+RDX=
